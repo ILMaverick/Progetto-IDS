@@ -1,8 +1,11 @@
 package contents;
 
+import elements.PointOfInterest;
+
 public abstract class Content {
 
 	private boolean status;
+	private PointOfInterest pointOfInterest;
 
 	public void mofify() {
 		// TODO
@@ -22,6 +25,14 @@ public abstract class Content {
 
 	public void setStatus(boolean status) {
 		this.status = status;
+	}
+
+	public PointOfInterest getPointOfInterest() {
+		return pointOfInterest;
+	}
+
+	public void setPointOfInterest(PointOfInterest pointOfInterest) {
+		this.pointOfInterest = pointOfInterest;
 	}
 
 }
