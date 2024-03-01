@@ -1,5 +1,7 @@
 package elements;
 
+import contents.ContentAlbum;
+
 public class PointOfInterest {
 
 	private String name;
@@ -32,9 +34,5 @@ public class PointOfInterest {
 
 	public ContentAlbum getContentAlbum() {
 		return album;
-	}
-
-	public void setContentAlbum(String album) {
-		this.album = album;
 	}
 }
