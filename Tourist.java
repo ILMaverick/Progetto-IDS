@@ -1,0 +1,22 @@
+public class Tourist extends AbstractUser {
+
+	public Tourist(String userName, String password) {
+		super(userName, password);
+	}
+
+	public void reportInformation() {
+		throw new UnsupportedOperationException();
+	}
+
+	public void search() {
+		throw new UnsupportedOperationException();
+	}
+
+	public void access() {
+		throw new UnsupportedOperationException();
+	}
+
+	public void show() {
+		throw new UnsupportedOperationException();
+	}
+}
