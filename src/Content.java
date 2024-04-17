@@ -1,5 +1,12 @@
 public abstract class Content<T> {
-	private boolean publishedStatus;
+	
+	protected T myContent;
+	
+	protected boolean publishedStatus = false;
+	
+	public Content(T myContent) {
+		this.myContent = myContent;
+	}
 
 	abstract void modify(T content);
 

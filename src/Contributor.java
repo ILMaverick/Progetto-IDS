@@ -1,7 +1,7 @@
 public class Contributor extends AbstractUser {
 
-	public Contributor(String userName, String password) {
-		super(userName, password);
+	public Contributor(String name, String surname) {
+		super(name,surname);
 	}
 
 	public void createPOI() {
@@ -16,19 +16,11 @@ public class Contributor extends AbstractUser {
 		throw new UnsupportedOperationException();
 	}
 
-	public void modify() {
+	public void modifyContent() {
 		throw new UnsupportedOperationException();
 	}
-
-	public void search() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void access() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void show() {
+	
+	public void modifyPOI() {
 		throw new UnsupportedOperationException();
 	}
 }

@@ -5,10 +5,10 @@ public class PointOfInterest {
 	private static int count=0;
 	private final String type;
 	private final int id;
-	private final Coordinates coordinates;
+	private final Coordinate coordinates;
 	private List<Content> contents = new ArrayList<>();
 
-	public PointOfInterest(String type, Coordinates coordinates){
+	public PointOfInterest(String type, Coordinate coordinates){
 		this.type = type;
 		this.coordinates = coordinates;
 		this.id = count++;
@@ -38,7 +38,7 @@ public class PointOfInterest {
 		return id;
 	}
 
-	public Coordinates getCoordinates(){
+	public Coordinate getCoordinates(){
 		return coordinates;
 	}
 }

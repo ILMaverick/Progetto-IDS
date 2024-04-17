@@ -1,30 +1,23 @@
-public class TextContent extends Content<TextContent> {
-	private String text;
+public class TextContent extends Content<String> {
+	
 
-	public TextContent(String text){
-		this.text = text;
-	}
-
-	public String getText(){
-		return text;
-	}
-
-	public void setText(String text) {
-		this.text = text;
+	public TextContent(String myContent) {
+		super(myContent);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	void modify(TextContent content) {
+	void modify(String text) {
 
 	}
 
 	@Override
-	void create(TextContent content) {
+	void create(String content) {
 
 	}
 
 	@Override
 	void show() {
-		System.out.println(text);
+		System.out.println(super.myContent);
 	}
 }
